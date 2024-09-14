@@ -1,14 +1,23 @@
 public class Store {
     public static void main(String[] args) {
-        int p1 = 15;
-        int p2 = 10;
-        int p3 = 5;
+       
+        final int PRICE_PRODUCT_1= 15;
+        final int PRICE_PRODUCT_2 = 10;
+        final int PRICE_PRODUCT_3 = 5;
 
-        int total1 = p1 * 2;
-        int total2 = p2 * 3;
-        int total3 = p3 * 4;
+        final int QUANTITY_PRODUCT_1= 2;
+        final int QUANTITY_PRODUCT_2= 3;
+        final int QUANTITY_PRODUCT_3= 4;
 
-        int totalSales = total1 + total2 + total3;
+        int[] productsPrices = {PRICE_PRODUCT_1, PRICE_PRODUCT_2, PRICE_PRODUCT_3};
+        int[] productsQuantities = {QUANTITY_PRODUCT_1, QUANTITY_PRODUCT_2, QUANTITY_PRODUCT_3};
+
+         int totalSales = 0;
+
+        for (int i = 0; i<productsPrices.length; i++ ){
+            totalSales += productsPrices[i]* productsQuantities[i];
+        }
+
 
         if (totalSales > 50) {
             System.out.println("Good sales performance");
