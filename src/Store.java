@@ -9,6 +9,8 @@ public class Store {
         final int QUANTITY_PRODUCT_2= 3;
         final int QUANTITY_PRODUCT_3= 4;
 
+        final int PROMEDIO_VENTAS= 50;
+
         int[] productsPrices = {PRICE_PRODUCT_1, PRICE_PRODUCT_2, PRICE_PRODUCT_3};
         int[] productsQuantities = {QUANTITY_PRODUCT_1, QUANTITY_PRODUCT_2, QUANTITY_PRODUCT_3};
 
@@ -19,7 +21,7 @@ public class Store {
         }
 
 
-        if (totalSales > 50) {
+        if (totalSales > PROMEDIO_VENTAS) {
             System.out.println("Good sales performance");
         } else {
             System.out.println("Low sales performance");
